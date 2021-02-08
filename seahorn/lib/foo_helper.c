@@ -1,4 +1,5 @@
 #include <stddef.h>
+#include <stdlib.h>
 #include <seahorn/seahorn.h>
 #include "foo_helper.h"
 #include "nondet.h"
