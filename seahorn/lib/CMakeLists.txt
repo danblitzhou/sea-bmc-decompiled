@@ -1,2 +1,2 @@
-add_library(helpers foo_helper.c)
+add_library(helpers foo_helper.c bcmp.c)
 sea_attach_bc(helpers)

@@ -25,6 +25,10 @@ set(LLVMIR_OPT ${SEA_OPT})
 set(SEA_LIB ${CMAKE_CURRENT_SOURCE_DIR}/seahorn/lib)
 set(FOO_ROOT ${CMAKE_CURRENT_SOURCE_DIR}/foo)
 
+configure_file(verify.py.in verify @ONLY)
+set(VERIFY_SCRIPT ${CMAKE_CURRENT_BINARY_DIR}/verify-c-common.sh)
+set(VERIFY_CMD ${CMAKE_CURRENT_BINARY_DIR}/verify)
+
 # add the include directory from the build tree
 include_directories(BEFORE ${CMAKE_CURRENT_BINARY_DIR}/include)
 

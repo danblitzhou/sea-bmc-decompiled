@@ -203,6 +203,10 @@ function(sea_attach_bc_link name)
   sea_attach_bc(${name})
 endfunction()
 
+configure_file(sea.yaml sea.yaml @ONLY)
+configure_file(sea_cex_base.yaml sea.cex.yaml @ONLY)
+configure_file(sea_vac.yaml sea.vac.yaml @ONLY)
+
 add_subdirectory(lib)
 
 add_subdirectory(jobs/foo)
