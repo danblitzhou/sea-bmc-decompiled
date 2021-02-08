@@ -1,4 +1,5 @@
 #pragma once
+#include <stddef.h>
 
 #ifndef MAX_FOO_SIZE
 #define MAX_FOO_SIZE 16
