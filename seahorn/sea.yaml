@@ -35,7 +35,7 @@ verify_options:
 # use z3 simplifier during vcgen
   horn-bv2-simplify: true
 # wide memory manager to track pointer sizes
-  horn-bv2-extra-widemem: ''
+  horn-bv2-extra-widemem: false
 # intermediate results in human readable form for debugging
   '-S': ''
 # keep intermediate results for debugging 
