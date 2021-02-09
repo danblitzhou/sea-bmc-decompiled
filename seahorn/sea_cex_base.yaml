@@ -31,11 +31,11 @@ verify_options:
 # stack allocation from a symbolic starting point
   horn-explicit-sp0: false
 # lambdas for memory
-  horn-bv2-lambdas: false
+  horn-bv2-lambdas: ''
 # use z3 simplifier during vcgen
   horn-bv2-simplify: true
 # wide memory manager to track pointer sizes
-  horn-bv2-extra-widemem: false
+  horn-bv2-extra-widemem: ''
 # intermediate results in human readable form for debugging
   '-S': ''
 # keep intermediate results for debugging 
@@ -49,7 +49,7 @@ verify_options:
   log: cex
 # number of words to unroll symbolic memcpy for array-based memory representation
 # should be at least MAX_BUFFER_SIZE
-  horn-array-sym-memcpy-unroll-count: 10
+  horn-array-sym-memcpy-unroll-count: 20
 # print memory state as a table
 # XXX still flaky, sometimes only the last byte can be trusted
   horn-bmc-hexdump: true

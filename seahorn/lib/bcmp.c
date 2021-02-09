@@ -5,7 +5,7 @@
 #include <stdlib.h>
 #include <strings.h>
 
-#define MAX_BUFFER_SIZE 16
+#define MAX_BUFFER_SIZE 4
 
 #define INLINE __attribute__((always_inline))
 /**
