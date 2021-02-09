@@ -16,7 +16,7 @@ unsigned * init_bounded_foo_array(const unsigned *indices, size_t *len) {
   assume(indices[2] < alloc_len);
   assume(indices[3] < alloc_len);
   assume(res[indices[2]] < alloc_len);
-  assume(res[indices[0]] < alloc_len);
+  assume(res[indices[0]] < alloc_len * 8);
   *len = alloc_len;
   return res;
 }
