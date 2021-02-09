@@ -174,11 +174,12 @@ function(sea_attach_bc name)
   set_property(TARGET ${SOURCE_EXE} PROPERTY EXCLUDE_FROM_ALL ON)
 
   target_compile_definitions(${SOURCE_EXE} PRIVATE __SEAHORN__)
+  target_compile_definitions(${SOURCE_EXE} PRIVATE VACCHECK)
+
   if(ENABLE_MEMCPY)
     target_compile_definitions(${SOURCE_EXE} PRIVATE USE_MEMCPY)
   endif()
 
-  target_compile_definitions(${SOURCE_EXE} PRIVATE VACCHECK)
 
   # convert ${SOURCE_EXE} target to llvm
   llvmir_attach_bc_target(TARGET ${TARGET_OBJ} DEPENDS ${SOURCE_EXE})
@@ -203,7 +204,7 @@ function(sea_get_file_name VAR LLVMIR_TARGET)
 endfunction()
 
 function(sea_attach_bc_link name)
-  sea_link_libraries(${name} helpers.ir)
+  sea_link_libraries(${name} sea_proof.ir)
   sea_attach_bc(${name})
 endfunction()
 
