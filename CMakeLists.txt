@@ -15,6 +15,8 @@ if(NOT CMAKE_BUILD_TYPE)
     "Choose the type of build, options are: None Debug Release RelWithDebInfo MinSizeRel." FORCE)
 endif()
 
+option(ENABLE_MEMCPY "Enable memcpy" OFF)
+
 set(SEAHORN_ROOT "/usr" CACHE PATH "Path to SeaHorn installation")
 set(SEA_LINK "llvm-link" CACHE STRING "Path to llvm-link")
 set(LLVMIR_LINK ${SEA_LINK})
