@@ -1,0 +1,6 @@
+verify_options:
+  command: bpf
+  horn-bv2-word-size: 1
+  horn-unify-assumes: false 
+  dsa: sea-flat
+  horn-bv2-extra-widemem: false

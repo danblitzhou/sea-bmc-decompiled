@@ -215,3 +215,4 @@ configure_file(sea_vac.yaml sea.vac.yaml @ONLY)
 add_subdirectory(lib)
 
 add_subdirectory(jobs/foo)
+add_subdirectory(jobs/foo_flat)
