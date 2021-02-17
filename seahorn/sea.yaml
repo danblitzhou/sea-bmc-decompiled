@@ -1,4 +1,5 @@
 verify_options:
+  command: fpf
 # Optimization level
   '-O3': ''
 # 

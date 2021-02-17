@@ -1,3 +1,4 @@
 verify_options:
   bound: 32 # MAX_BUFFER_SIZE * sizeof(unsigned)
   horn-bv2-word-size: 1
+  command: fpf
