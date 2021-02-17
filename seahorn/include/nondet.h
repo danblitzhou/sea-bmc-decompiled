@@ -4,6 +4,8 @@
 #include <stddef.h>
 #include <stdint.h>
 
+extern __declspec(noalias) void sea_printf(const char *format, ...);
+
 /**
  * Mark nondet functions as not accessing memory
  * Note: if the attribute is too agressive, the optimizer might remove
